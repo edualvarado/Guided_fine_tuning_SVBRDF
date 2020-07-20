@@ -1,9 +1,10 @@
 # PyCharm
 *.idea
+__pycache__/
 
 # Folders
 /weights
-
+/saved_weights
 
 
 
