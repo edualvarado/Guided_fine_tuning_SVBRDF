@@ -1,12 +1,16 @@
 import os
 import glob
-import tensorflow as tf
+#import tensorflow as tf
 from random import shuffle
 import helpers
 import math
 import renderer
 import multiprocessing
 import numpy as np
+
+#!!!If running TF v > 2.0 uncomment those lines (also remove the tensorflow import on line 3):!!!
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 class dataset:
     inputPath = ""

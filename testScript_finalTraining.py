@@ -8,6 +8,7 @@ import shutil
 inputSize = 512
 strideSize = 256
 exampleSize = 256
+
 def gaussianWeight(x, mu, sigma):
     a = 1/(sigma * np.sqrt(2.0 * np.pi))
     return a * np.exp(-(1.0/2.0) * ((x - mu)/sigma)**2)

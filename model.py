@@ -1,6 +1,11 @@
-import tensorflow as tf
+#import tensorflow as tf
 import tfHelpers
 import helpers
+
+#!!!If running TF v > 2.0 uncomment those lines (also remove the tensorflow import on line 1):!!!
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+
 class Model:
     output = None
     inputTensor = None

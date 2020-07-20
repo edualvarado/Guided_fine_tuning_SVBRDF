@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 import os
-import tensorflow as tf
+#import tensorflow as tf
 import numpy as np
 import argparse
 import json
@@ -19,8 +19,8 @@ import shutil
 from random import shuffle
 
 #!!!If running TF v > 2.0 uncomment those lines (also remove the tensorflow import on line 5):!!!
-#import tensorflow.compat.v1 as tf
-#tf.disable_v2_behavior()
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 #Under MIT License
 

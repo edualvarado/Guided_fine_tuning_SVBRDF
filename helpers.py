@@ -1,9 +1,13 @@
 import os
-import tensorflow as tf
+#import tensorflow as tf
 import numpy as np
 import math
 import acquisitionScene
 #import renderer
+
+#!!!If running TF v > 2.0 uncomment those lines (also remove the tensorflow import on line 2):!!!
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 def preprocess(image):
     with tf.name_scope("preprocess"):
